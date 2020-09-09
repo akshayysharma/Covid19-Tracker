@@ -19,7 +19,11 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           md={3}
         >
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography
+              color="textSecondary"
+              gutterBottom
+              className={styles.cardHeading}
+            >
               Infected
             </Typography>
             <Typography varient="h5">
@@ -30,11 +34,13 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                 separator=","
               />
             </Typography>
-            <Typography color="textSecondary">
-              {new Date(lastUpdate).toDateString()}
-            </Typography>
-            <Typography varient="body2">
-              Number of active cases of COVID-19
+            <Typography>{new Date(lastUpdate).toDateString()}</Typography>
+            <Typography
+              varient="body2"
+              color="textSecondary"
+              className={styles.cardBody}
+            >
+              Number of infected cases of COVID-19
             </Typography>
           </CardContent>
         </Grid>
@@ -46,8 +52,12 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           md={3}
         >
           <CardContent className="cardContent">
-            <Typography color="textSecondary" gutterBottom>
-              <b>Recoverd</b>
+            <Typography
+              color="textSecondary"
+              gutterBottom
+              className={styles.cardHeading}
+            >
+              Recoverd
             </Typography>
             <Typography varient="h5">
               <CountUp
@@ -57,10 +67,12 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                 separator=","
               />
             </Typography>
-            <Typography color="textSecondary">
-              {new Date(lastUpdate).toDateString()}
-            </Typography>
-            <Typography varient="body2">
+            <Typography>{new Date(lastUpdate).toDateString()}</Typography>
+            <Typography
+              varient="body2"
+              color="textSecondary"
+              className={styles.cardBody}
+            >
               Number of recoveries of COVID-19
             </Typography>
           </CardContent>
@@ -73,7 +85,11 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           md={3}
         >
           <CardContent className="cardContent">
-            <Typography color="textSecondary" gutterBottom>
+            <Typography
+              color="textSecondary"
+              gutterBottom
+              className={styles.cardHeading}
+            >
               Deaths
             </Typography>
             <Typography varient="h5">
@@ -84,11 +100,13 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                 separator=","
               />
             </Typography>
-            <Typography color="textSecondary">
-              {new Date(lastUpdate).toDateString()}
-            </Typography>
-            <Typography varient="body2">
-              Number of deaths caused by of COVID-19
+            <Typography>{new Date(lastUpdate).toDateString()}</Typography>
+            <Typography
+              varient="body2"
+              color="textSecondary"
+              className={styles.cardBody}
+            >
+              Number of deaths due to COVID-19
             </Typography>
           </CardContent>
         </Grid>

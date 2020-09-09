@@ -6,9 +6,15 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.githubLink {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
 .image {
   width: 370px;
-  /* margin-top: 50px; */
+  margin-bottom: 0px;
 }
 @media only screen and (max-width: 770px) {
   .container {
@@ -16,5 +22,8 @@ body {
   }
   .image {
     width: 100%;
+  }
+  .githubLink {
+    display: none;
   }
 }

@@ -1,9 +1,19 @@
 .container {
   margin: 50px 0;
+  width: 70%;
 }
 
 .card {
   margin: 0 2% !important;
+  min-width: 200px;
+}
+
+.cardHeading {
+  font-weight: 600 !important;
+  font-size: 24px !important;
+}
+.cardBody {
+  font-size: 12px !important;
 }
 
 .infected {
@@ -16,19 +26,6 @@
 
 .deaths {
   border-bottom: 10px solid rgba(255, 0, 0, 0.5);
-}
-
-.MuiPaper-root
-  .MuiCard-root
-  .MuiGrid-root
-  .Cards_card__1GXXW
-  .Cards_infected__1Qsld
-  .MuiGrid-item
-  .MuiGrid-grid-xs-12
-  .MuiGrid-grid-md-3
-  .MuiPaper-elevation1
-  .MuiPaper-rounded {
-  min-width: 200px;
 }
 
 @media (max-width: 770px) {
