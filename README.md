@@ -8,10 +8,12 @@ Tracker which provide information about
 
 ## Setup
 
-- "git clone https://github.com/akshayysharma/Covid-19-Tracker"
-- cd Covid-19-Tracker
-- "npm install"
-- "yarn start"
+```bash 
+git clone https://github.com/akshayysharma/Covid-19-Tracker.git
+cd Covid-19-Tracker
+npm install
+npm start
+```
 
 ## API
 
